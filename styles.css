@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right, red, orange, rgba(152, 245, 152, 0.671) );
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    position: relative;
+    font-weight: bolder;
+}
+
+
+
+header{
+    margin: 0;
+}
+
+
+.social-media{
+    height: 10em;
+    width: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items:left;
+    flex-direction: column;
+    margin-left: 90%;
+    position: fixed;
+}
+
+
+
+.icons{
+    color: black;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.icons:hover{
+    background: white;
+    color: red;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.home, .skills{
+    width: 80vw;
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+.about, .projects{
+    width: 80vw;
+    margin-left: 5em;
+    margin-top: 1em;
+    box-shadow: 2em 0 2em black;
+    border-radius: 2px;
+    
+}
+
+.home-text a{
+    color:black;
+}
+
+.home-text a:hover{
+    text-decoration: underline;
+}
+
+
+.home-content, .about-content, .skills-content, .projects-content{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.home-image img, .about-image img, .skills-image img, .projects-image img{
+    width: 30vw;
+    height: 100vh;
+    box-shadow: 0 2em 2em black;
+    border-radius: 10px;
+}
+
+.skills-image{
+    margin-left: 0;
+    position: relative;
+    display: flex;
+}
+
+.skills-image img{
+    margin-left: 0;
+    position: relative;
+    display: flex;
+}
+
+.home-text, .about-text, .projects-text, .skills-progress{
+    position: relative;
+    margin-left: 1em;
+    width: 45vw;
+}
+
+.home-text h4, .about-text h4, .projects-text h4, .skills-progress h4{
+    font-size: 2rem;
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: 1em; 
+}
+
+.home-text p, .about-text p{
+    text-align: center;
+}
+
+.line{
+    height: 2em;
+    width: 80%;
+    margin: 1em;
+    position: relative;
+    background: black;
+    border-radius: 10px;
+}
+
+.progress{
+    height: 80%;
+    width: 100%;
+    background: linear-gradient(to right, black,red, white);
+    position: absolute;
+    border-radius: 10px;
+    top: .2em;
+}
+.line1 .progress{
+    width: 83%;
+}
+.line2 .progress{
+    width: 65%;
+}
+.line3 .progress{
+    width: 28%;
+}
+
+button{
+    position: absolute;
+    bottom: 0.2em;
+    right: 15em;
+    width: 10em;
+    height: 3em;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bolder;
+    border: none;
+}
+
+button:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+footer{
+    height: 5em;;
+    width: 100%;
+    margin:0;
+}
+
+footer div{
+    margin-left: 40%;
+    margin-top: 1em;
+    position: relative;
+    height: 3em;
+    width: 12em;
+}
+
+footer p{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.projects-text img{
+    width: 10em;
+    height: 10em;
+    display: flexbox;
+    padding: 1em;
+    margin-left: 1em;
+
+}
+
+.projects-text img:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+
+    body{
+        box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+  .home, .about, .projects, .skills{
+    position: relative;
+        width: 80vw;
+        height: 100%;
+    margin-top: .1em;
+    box-shadow: none;
+    margin-left: 0;
+  }
+
+    .home-image img, .about-image img{
+        position: absolute;
+        width: 70vw;
+        height: 50%;
+        left: 0;
+        right: 0;
+        box-shadow: none;
+      z-index: 1;
+    }
+
+    .home-text, .about-text{
+        position: absolute;
+        width: 70vw;
+        height: 50%;
+        z-index: 2;
+        left: 0;
+      right: 0;
+    }
+
+    .skills-image img, .projects-image img{
+        visibility: hidden;
+    }
+
+    .projects-text{
+  position: absolute;
+      left: 0;
+}
+
+    .projects-text img{
+        width: 60vw;
+        height: 40%;
+        padding-top: .1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2em;
+    }
+
+    .line{
+        height: 1em;
+        width: 80vw;
+        margin: .5em;
+    }
+    
+    .progress{
+        top: .1em;
+    }
+
+    button{
+      position: relative;
+      width: 7em;
+      height: 4em;
+      font-size: 0.5rem;
+    }
+
+    header{
+        visibility: hidden;
+    }
+
+    footer{
+        position: relative;
+      margin-top: 7em;
+    }
+  .skills-progress{
+    position: absolute;
+    left: 0;
+    top: .5em;
+  }
+  
+  h4{
+    paddin-bottom: 0;
+  }
+  
+  .projects h4{
+   
+     margin-left: 2em;
+  }
+}
